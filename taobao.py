@@ -8,8 +8,8 @@ from selenium.webdriver.support import expected_conditions as EC
 import datetime  
 import time
 SERVICE_ARGS = ['--load-images=false', '--disk-cache=true']
-KEYWORD = '伟伟君'
-KEYWORD2 = 'wijnjg52'
+KEYWORD = 'xxx'
+KEYWORD2 = 'xxxxx'
 browser = webdriver.Chrome(service_args=SERVICE_ARGS)#PhantomJS
 wait = WebDriverWait(browser, 10)
 
@@ -36,7 +36,7 @@ def buy_on_time(buytime):
             
             #input = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#J-security > div.ui-securitycore.ui-securitycore-tip.J-securitycoreTip > div > div.J-checkResult.fn-hide')))
             input = wait.until(EC.presence_of_element_located((By.ID, 'payPassword_rsainput')))
-            input.send_keys('198726')#密码输入
+            input.send_keys('xxxxxx')#密码输入
 
             submit = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#J_authSubmit')))
             submit.click() 
